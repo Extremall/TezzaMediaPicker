@@ -22,6 +22,31 @@ struct MediaPickerView: View {
 
 	var body: some View {
 		VStack {
+			HStack {
+				Button {
+					presentationMode.wrappedValue.dismiss()
+				} label: {
+					Image(systemName: "xmark")
+						.font(.title)
+						.foregroundColor(Color.black)
+				}
+				.padding(.horizontal, 24)
+				.padding(.top, 16)
+				Spacer()
+				Button {
+					completion(viewModel.selectedAssets)
+					presentationMode.wrappedValue.dismiss()
+				} label: {
+					Image(systemName: "checkmark")
+						.font(.title)
+						.foregroundColor(Color.black)
+				}
+				.padding(.horizontal, 24)
+				.padding(.top, 16)
+				.opacity(viewModel.selectedAssets.isEmpty ? 0.0 : 1.0)
+				.disabled(viewModel.selectedAssets.isEmpty)
+			}
+			
 			SegmentedView(selectedTab: $viewModel.sourceNum)
 			
 			GeometryReader { geo in
@@ -43,13 +68,6 @@ struct MediaPickerView: View {
 					}
 				}
 			}
-
-			Button("Done") {
-				completion(viewModel.selectedAssets)
-				presentationMode.wrappedValue.dismiss()
-			}
-			.padding()
-			.disabled(viewModel.selectedAssets.isEmpty)
 		}
 		.onAppear {
 			viewModel.fetchItems()

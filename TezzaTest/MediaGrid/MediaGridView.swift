@@ -27,15 +27,23 @@ struct MediaGridView: View {
 		ZStack {
 			VStack {
 				HStack(spacing: 30) {
-					Button("Import") {
+					Button {
 						isPhotoPickerPresented.toggle()
+					} label: {
+						Image(systemName: "rectangle.stack.badge.plus")
+							.font(.largeTitle)
+							.foregroundColor(.black)
 					}
 					
 					if selected.count > 0 {
-						Button("Remove") {
+						Button {
 							viewModel.removeAssets(ids: selected)
 							selected.removeAll()
 							isSelectState = false
+						} label: {
+							Image(systemName: "trash")
+								.font(.largeTitle)
+								.foregroundColor(.black)
 						}
 					}
 					Spacer()
@@ -44,7 +52,7 @@ struct MediaGridView: View {
 				.padding(.horizontal, 20)
 				GeometryReader { geo in
 					ScrollView {
-						LazyVGrid(columns: columns, spacing: 20) {
+						LazyVGrid(columns: columns, spacing: 10) {
 							ForEach(viewModel.importedMedia, id: \.phAssetID) { item in
 								MediaGridCellView(
 									assetEntity: item,
@@ -77,11 +85,13 @@ struct MediaGridView: View {
 				.opacity(viewModel.isImporting ? 1.0 : 0.0)
 			
 		}
+		.background(Color("Tezza"))
 		.sheet(isPresented: $isPhotoPickerPresented) {
 			MediaPickerView { assets in
 				viewModel.importAssets(assets: assets)
 				selected.removeAll()
 			}
+			.background(Color("Tezza"))
 		}
 		.sheet(isPresented: $isFullPickerPresented){
 			MediaFullScreenView(importedMedia: viewModel.importedMedia, selectedIndex: $selectedIndex)
