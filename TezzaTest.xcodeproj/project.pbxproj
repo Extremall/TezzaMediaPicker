@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		293437D22D419D210048EFE2 /* TezzaTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293437D12D419D210048EFE2 /* TezzaTestApp.swift */; };
+		293437D42D419D210048EFE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293437D32D419D210048EFE2 /* ContentView.swift */; };
+		293437D62D419D220048EFE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293437D52D419D220048EFE2 /* Assets.xcassets */; };
+		293437D92D419D220048EFE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293437D82D419D220048EFE2 /* Preview Assets.xcassets */; };
+		293437E12D419D630048EFE2 /* MediaGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293437E02D419D630048EFE2 /* MediaGridView.swift */; };
+		293437E32D419DC00048EFE2 /* MediaGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293437E22D419DC00048EFE2 /* MediaGridViewModel.swift */; };
+		293437E62D419E000048EFE2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293437E52D419E000048EFE2 /* DatabaseManager.swift */; };
+		29A888F02D42AEED00E20EE5 /* MediaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A888EF2D42AEED00E20EE5 /* MediaPickerView.swift */; };
+		29A888F22D42B20B00E20EE5 /* MediaPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A888F12D42B20B00E20EE5 /* MediaPickerViewModel.swift */; };
+		29A888F42D42B39D00E20EE5 /* MediaPickerThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A888F32D42B39D00E20EE5 /* MediaPickerThumbnailView.swift */; };
+		29A888F72D42B70A00E20EE5 /* SegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A888F62D42B70A00E20EE5 /* SegmentedView.swift */; };
+		29A889002D42D6B400E20EE5 /* AssetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A888FF2D42D6B400E20EE5 /* AssetEntity.swift */; };
+		29A889032D42D84800E20EE5 /* FileStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A889022D42D84800E20EE5 /* FileStorageManager.swift */; };
+		29A889062D42E6AF00E20EE5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 29A889052D42E6AF00E20EE5 /* RealmSwift */; };
+		29A889082D43A32800E20EE5 /* MediaGridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A889072D43A32800E20EE5 /* MediaGridCellView.swift */; };
+		29A8890B2D43B7E400E20EE5 /* MediaFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8890A2D43B7E400E20EE5 /* MediaFullScreenView.swift */; };
+		29A8890C2D43BE3300E20EE5 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 29A889052D42E6AF00E20EE5 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		29A8890F2D43DC8200E20EE5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8890E2D43DC8200E20EE5 /* VideoPlayerView.swift */; };
+		29A889112D43E61F00E20EE5 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A889102D43E61F00E20EE5 /* ProgressView.swift */; };
+		29A889142D43FC0800E20EE5 /* TimeInterval+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A889132D43FC0800E20EE5 /* TimeInterval+Format.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		29A8890D2D43BE3300E20EE5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				29A8890C2D43BE3300E20EE5 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		293437CE2D419D210048EFE2 /* TezzaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TezzaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		293437D12D419D210048EFE2 /* TezzaTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TezzaTestApp.swift; sourceTree = "<group>"; };
+		293437D32D419D210048EFE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		293437D52D419D220048EFE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		293437D82D419D220048EFE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		293437E02D419D630048EFE2 /* MediaGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGridView.swift; sourceTree = "<group>"; };
+		293437E22D419DC00048EFE2 /* MediaGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGridViewModel.swift; sourceTree = "<group>"; };
+		293437E52D419E000048EFE2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		29A888EF2D42AEED00E20EE5 /* MediaPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerView.swift; sourceTree = "<group>"; };
+		29A888F12D42B20B00E20EE5 /* MediaPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerViewModel.swift; sourceTree = "<group>"; };
+		29A888F32D42B39D00E20EE5 /* MediaPickerThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerThumbnailView.swift; sourceTree = "<group>"; };
+		29A888F62D42B70A00E20EE5 /* SegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedView.swift; sourceTree = "<group>"; };
+		29A888FF2D42D6B400E20EE5 /* AssetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetEntity.swift; sourceTree = "<group>"; };
+		29A889022D42D84800E20EE5 /* FileStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageManager.swift; sourceTree = "<group>"; };
+		29A889072D43A32800E20EE5 /* MediaGridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGridCellView.swift; sourceTree = "<group>"; };
+		29A8890A2D43B7E400E20EE5 /* MediaFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFullScreenView.swift; sourceTree = "<group>"; };
+		29A8890E2D43DC8200E20EE5 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		29A889102D43E61F00E20EE5 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		29A889132D43FC0800E20EE5 /* TimeInterval+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Format.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		293437CB2D419D210048EFE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A889062D42E6AF00E20EE5 /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		293437C52D419D210048EFE2 = {
+			isa = PBXGroup;
+			children = (
+				293437D02D419D210048EFE2 /* TezzaTest */,
+				293437CF2D419D210048EFE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		293437CF2D419D210048EFE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				293437CE2D419D210048EFE2 /* TezzaTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		293437D02D419D210048EFE2 /* TezzaTest */ = {
+			isa = PBXGroup;
+			children = (
+				29A889122D43FBF000E20EE5 /* Extensions */,
+				29A889092D43B7C900E20EE5 /* MediaView */,
+				29A888EE2D42AEED00E20EE5 /* Picker */,
+				293437E42D419DDC0048EFE2 /* Storage */,
+				293437D12D419D210048EFE2 /* TezzaTestApp.swift */,
+				293437DF2D419D3C0048EFE2 /* MediaGrid */,
+				293437D32D419D210048EFE2 /* ContentView.swift */,
+				293437D52D419D220048EFE2 /* Assets.xcassets */,
+				293437D72D419D220048EFE2 /* Preview Content */,
+			);
+			path = TezzaTest;
+			sourceTree = "<group>";
+		};
+		293437D72D419D220048EFE2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				293437D82D419D220048EFE2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		293437DF2D419D3C0048EFE2 /* MediaGrid */ = {
+			isa = PBXGroup;
+			children = (
+				293437E02D419D630048EFE2 /* MediaGridView.swift */,
+				29A889102D43E61F00E20EE5 /* ProgressView.swift */,
+				29A889072D43A32800E20EE5 /* MediaGridCellView.swift */,
+				293437E22D419DC00048EFE2 /* MediaGridViewModel.swift */,
+			);
+			path = MediaGrid;
+			sourceTree = "<group>";
+		};
+		293437E42D419DDC0048EFE2 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				29A888FE2D42D69D00E20EE5 /* Models */,
+				293437E52D419E000048EFE2 /* DatabaseManager.swift */,
+				29A889022D42D84800E20EE5 /* FileStorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		29A888EE2D42AEED00E20EE5 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				29A888EF2D42AEED00E20EE5 /* MediaPickerView.swift */,
+				29A888F62D42B70A00E20EE5 /* SegmentedView.swift */,
+				29A888F12D42B20B00E20EE5 /* MediaPickerViewModel.swift */,
+				29A888F32D42B39D00E20EE5 /* MediaPickerThumbnailView.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		29A888FE2D42D69D00E20EE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29A888FF2D42D6B400E20EE5 /* AssetEntity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29A889092D43B7C900E20EE5 /* MediaView */ = {
+			isa = PBXGroup;
+			children = (
+				29A8890A2D43B7E400E20EE5 /* MediaFullScreenView.swift */,
+				29A8890E2D43DC8200E20EE5 /* VideoPlayerView.swift */,
+			);
+			path = MediaView;
+			sourceTree = "<group>";
+		};
+		29A889122D43FBF000E20EE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				29A889132D43FC0800E20EE5 /* TimeInterval+Format.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		293437CD2D419D210048EFE2 /* TezzaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 293437DC2D419D220048EFE2 /* Build configuration list for PBXNativeTarget "TezzaTest" */;
+			buildPhases = (
+				293437CA2D419D210048EFE2 /* Sources */,
+				293437CB2D419D210048EFE2 /* Frameworks */,
+				293437CC2D419D210048EFE2 /* Resources */,
+				29A8890D2D43BE3300E20EE5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TezzaTest;
+			packageProductDependencies = (
+				29A889052D42E6AF00E20EE5 /* RealmSwift */,
+			);
+			productName = TezzaTest;
+			productReference = 293437CE2D419D210048EFE2 /* TezzaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		293437C62D419D210048EFE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					293437CD2D419D210048EFE2 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 293437C92D419D210048EFE2 /* Build configuration list for PBXProject "TezzaTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 293437C52D419D210048EFE2;
+			packageReferences = (
+				29A889042D42E6AF00E20EE5 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 293437CF2D419D210048EFE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				293437CD2D419D210048EFE2 /* TezzaTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		293437CC2D419D210048EFE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293437D92D419D220048EFE2 /* Preview Assets.xcassets in Resources */,
+				293437D62D419D220048EFE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		293437CA2D419D210048EFE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293437E12D419D630048EFE2 /* MediaGridView.swift in Sources */,
+				29A888F22D42B20B00E20EE5 /* MediaPickerViewModel.swift in Sources */,
+				29A889112D43E61F00E20EE5 /* ProgressView.swift in Sources */,
+				29A8890B2D43B7E400E20EE5 /* MediaFullScreenView.swift in Sources */,
+				29A888F72D42B70A00E20EE5 /* SegmentedView.swift in Sources */,
+				29A889082D43A32800E20EE5 /* MediaGridCellView.swift in Sources */,
+				29A888F02D42AEED00E20EE5 /* MediaPickerView.swift in Sources */,
+				293437E32D419DC00048EFE2 /* MediaGridViewModel.swift in Sources */,
+				293437E62D419E000048EFE2 /* DatabaseManager.swift in Sources */,
+				293437D42D419D210048EFE2 /* ContentView.swift in Sources */,
+				29A888F42D42B39D00E20EE5 /* MediaPickerThumbnailView.swift in Sources */,
+				293437D22D419D210048EFE2 /* TezzaTestApp.swift in Sources */,
+				29A889142D43FC0800E20EE5 /* TimeInterval+Format.swift in Sources */,
+				29A889002D42D6B400E20EE5 /* AssetEntity.swift in Sources */,
+				29A889032D42D84800E20EE5 /* FileStorageManager.swift in Sources */,
+				29A8890F2D43DC8200E20EE5 /* VideoPlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		293437DA2D419D220048EFE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		293437DB2D419D220048EFE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		293437DD2D419D220048EFE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TezzaTest/Preview Content\"";
+				DEVELOPMENT_TEAM = 773Z8RSQQF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The app uses photo library for importing your media items";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.extremall.TezzaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		293437DE2D419D220048EFE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TezzaTest/Preview Content\"";
+				DEVELOPMENT_TEAM = 773Z8RSQQF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The app uses photo library for importing your media items";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.extremall.TezzaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		293437C92D419D210048EFE2 /* Build configuration list for PBXProject "TezzaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				293437DA2D419D220048EFE2 /* Debug */,
+				293437DB2D419D220048EFE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		293437DC2D419D220048EFE2 /* Build configuration list for PBXNativeTarget "TezzaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				293437DD2D419D220048EFE2 /* Debug */,
+				293437DE2D419D220048EFE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29A889042D42E6AF00E20EE5 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.53.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29A889052D42E6AF00E20EE5 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29A889042D42E6AF00E20EE5 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 293437C62D419D210048EFE2 /* Project object */;
+}
