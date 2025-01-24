@@ -73,7 +73,7 @@ struct MediaGridView: View {
 					}
 				}
 			}
-			ProgressView(viewModel: viewModel.progressViewModel)
+			GridProgressView(viewModel: viewModel.progressViewModel)
 				.opacity(viewModel.isImporting ? 1.0 : 0.0)
 			
 		}

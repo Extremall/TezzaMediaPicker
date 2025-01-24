@@ -11,7 +11,7 @@ import Foundation
 final class MediaGridViewModel: ObservableObject {
 	@Published var importedMedia: [AssetEntity] = []
 	@Published var isImporting: Bool = false
-	var progressViewModel = ProgressViewModel()
+	var progressViewModel = GridProgressViewModel()
 
 	func fetchImported() {
 		let database = DatabaseManager.shared

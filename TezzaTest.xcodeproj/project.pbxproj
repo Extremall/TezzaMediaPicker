@@ -25,7 +25,7 @@
 		29A8890B2D43B7E400E20EE5 /* MediaFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8890A2D43B7E400E20EE5 /* MediaFullScreenView.swift */; };
 		29A8890C2D43BE3300E20EE5 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 29A889052D42E6AF00E20EE5 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		29A8890F2D43DC8200E20EE5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8890E2D43DC8200E20EE5 /* VideoPlayerView.swift */; };
-		29A889112D43E61F00E20EE5 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A889102D43E61F00E20EE5 /* ProgressView.swift */; };
+		29A889112D43E61F00E20EE5 /* GridProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A889102D43E61F00E20EE5 /* GridProgressView.swift */; };
 		29A889142D43FC0800E20EE5 /* TimeInterval+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A889132D43FC0800E20EE5 /* TimeInterval+Format.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,7 @@
 		29A889072D43A32800E20EE5 /* MediaGridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGridCellView.swift; sourceTree = "<group>"; };
 		29A8890A2D43B7E400E20EE5 /* MediaFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFullScreenView.swift; sourceTree = "<group>"; };
 		29A8890E2D43DC8200E20EE5 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
-		29A889102D43E61F00E20EE5 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		29A889102D43E61F00E20EE5 /* GridProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridProgressView.swift; sourceTree = "<group>"; };
 		29A889132D43FC0800E20EE5 /* TimeInterval+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Format.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				293437E02D419D630048EFE2 /* MediaGridView.swift */,
-				29A889102D43E61F00E20EE5 /* ProgressView.swift */,
+				29A889102D43E61F00E20EE5 /* GridProgressView.swift */,
 				29A889072D43A32800E20EE5 /* MediaGridCellView.swift */,
 				293437E22D419DC00048EFE2 /* MediaGridViewModel.swift */,
 			);
@@ -253,7 +253,7 @@
 			files = (
 				293437E12D419D630048EFE2 /* MediaGridView.swift in Sources */,
 				29A888F22D42B20B00E20EE5 /* MediaPickerViewModel.swift in Sources */,
-				29A889112D43E61F00E20EE5 /* ProgressView.swift in Sources */,
+				29A889112D43E61F00E20EE5 /* GridProgressView.swift in Sources */,
 				29A8890B2D43B7E400E20EE5 /* MediaFullScreenView.swift in Sources */,
 				29A888F72D42B70A00E20EE5 /* SegmentedView.swift in Sources */,
 				29A889082D43A32800E20EE5 /* MediaGridCellView.swift in Sources */,
